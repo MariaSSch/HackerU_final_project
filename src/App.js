@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.sass';
+import Author from './components/Author/Author';
+import Books from './components/Books/Books';
+import FirstLine from './components/FirstLine/FirstLine';
+import Partners from './components/Partners/Partners';
+import Promo from './components/Promo/Promo';
+import GetBookCopy from './components/GetBookCopy/GetBookCopy';
+import Learnings from './components/Learnings/Learnings';
+import Articles from './components/Articles/Articles';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <FirstLine />
+      <Promo />
+      <Books />
+      <Author />
+      <Partners />
+      <GetBookCopy />
+      <Learnings />
+      <Articles />
+      <Footer />
     </div>
   );
 }

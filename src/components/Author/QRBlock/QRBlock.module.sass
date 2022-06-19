@@ -1,0 +1,31 @@
+@import './../../../utils/vars'
+.qr_block
+    padding: 15px 20px
+    width: 484px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    background-color: $accent-blue
+    .qr_title
+        font-family: 'Cardo'
+        font-style: normal
+        font-weight: 400
+        font-size: 22px
+        line-height: 26px
+        color: $accent-yellow
+        margin-bottom: 10px
+    .qr_info_item
+        display: flex
+        margin-top: 4px
+
+        & p+p
+            margin-left: 10px
+        & :last-child
+            letter-spacing: 0.19px
+        p
+            font-family: 'Inter'
+            font-style: normal
+            font-weight: 400
+            font-size: 18px
+            line-height: 28px
+            color: #B4C7E7

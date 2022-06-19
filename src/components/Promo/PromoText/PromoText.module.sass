@@ -1,0 +1,97 @@
+@import './../../../utils/vars'
+.promo_text
+    .welcome
+        font-family: 'Cardo'
+        font-style: normal
+        font-weight: 400
+        font-size: 21px
+        line-height: 36px
+        letter-spacing: 1.2px
+        text-transform: capitalize
+        color: #FFFFFF
+        position: relative
+        left: 49px
+        margin-bottom: 10px
+        &::before
+            content: ""
+            width: 35px
+            height: 2px
+            background-color: $accent-yellow
+            position: absolute
+            left: -49px
+            bottom: 18px
+    h1
+        font-family: 'Cardo'
+        font-style: normal
+        font-weight: 400
+        font-size: 64px
+        line-height: 78px
+        letter-spacing: 1.3px
+        color: #FFFFFF
+    .believes
+        font-family: 'Inter'
+        font-style: normal
+        font-weight: 400
+        font-size: 18px
+        line-height: 28px
+        color: #B4C7E7
+        margin-top: 24px
+    .demo
+        display: flex
+        align-items: center
+        justify-content: flex-start
+        margin: 42px 0 47px 0
+        .demo_link
+            font-family: 'Cardo'
+            font-style: normal
+            font-weight: 400
+            font-size: 19px
+            line-height: 30px
+            letter-spacing: 0.38px
+            text-transform: capitalize
+            color: #FFFFFF
+            margin-left: 51px
+            text-decoration: none
+            position: relative
+            &::after
+               content: ""
+               height: 1px
+               width: 100%
+               background-color: #fff 
+               position: absolute
+               left: 0
+               bottom: -3px
+    .statistics
+        display: flex
+        & div+div
+            margin-left: 60px
+        .stat_item
+            position: relative
+            &::after
+                content: ""
+                width: 16px
+                height: 16px
+                border-radius: 50%
+                background-color: $accent-yellow
+                position: absolute
+                left: -26px
+                bottom: 58px
+            .parameter
+                font-family: 'Cardo'
+                font-style: normal
+                font-weight: 400
+                font-size: 24px
+                line-height: 29px
+                letter-spacing: 0.48px
+                color: #FFFFFF
+                position: relative
+            .figures
+                font-family: 'Inter'
+                font-style: normal
+                font-weight: 400
+                font-size: 17px
+                line-height: 51px
+                color: #B4C7E7
+
+
+

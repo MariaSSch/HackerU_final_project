@@ -1,0 +1,19 @@
+@import './../../../utils/vars'
+
+.nav
+    display: flex
+    font-family: 'Inter'
+    font-style: normal
+    font-weight: 400
+    font-size: 17px
+    line-height: 26px
+    letter-spacing: 0.17px
+    &>a
+        color: #F6F8FC
+        text-decoration: none
+    &>a:hover
+        color: $accent-yellow
+    & a+a
+        margin-left: 47px
+        &:last-child
+            margin-left: 60px

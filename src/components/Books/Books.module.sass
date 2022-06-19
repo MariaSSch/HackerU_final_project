@@ -1,0 +1,73 @@
+@import './../../utils/vars'
+.books
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: #f5f5f5
+    .wrap
+        padding: 126px 0px 150px 0px
+        .h2
+            @include h2_accent
+            text-align: center
+            &::after
+                content: ""
+                width: 50px
+                height: 3px
+                background-color: $accent-yellow
+                position: absolute
+                left: 50%
+                bottom: -23px
+        .library
+            display: grid
+            grid-template-columns: 1fr 1fr
+            grid-column-gap: 48px
+            align-items: center
+            margin-top: 70px
+            .book
+                display: grid
+                grid-template-columns: 1fr 1fr
+                grid-column-gap: 30px
+                align-items: center
+                .book_title
+                    font-family: 'Cardo'
+                    font-style: normal
+                    font-weight: 400
+                    font-size: 32px
+                    line-height: 38px
+                    letter-spacing: 0.32px
+                    color: $accent-blue
+                .book_price
+                    font-family: 'Inter'
+                    font-style: normal
+                    font-weight: 400
+                    font-size: 21px
+                    line-height: 33px
+                    color: $accent-yellow
+                    margin: 7px 0 17px 0
+                .book_abstract
+                    font-family: 'Inter'
+                    font-style: normal
+                    font-weight: 400
+                    font-size: 19px
+                    line-height: 28px
+                    color: #969AA0
+                    width: 287px
+                .book_type
+                    font-family: 'Cardo'
+                    font-style: normal
+                    font-weight: 400
+                    font-size: 24px
+                    line-height: 29px
+                    color: $accent-blue
+                    margin-top: 13px
+                    position: relative
+                    left: 18px
+                    &::after
+                        content: ""
+                        width: 16px
+                        height: 16px
+                        border-radius: 50%
+                        background-color: $accent-yellow
+                        position: absolute
+                        left: -20px
+                        bottom: 5px

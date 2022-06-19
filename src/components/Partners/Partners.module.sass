@@ -1,0 +1,44 @@
+@import './../../utils/vars'
+
+.partners
+    display: flex
+    justify-content: center
+    align-content: center
+    padding: 126px 0
+    .wrap
+        .h2
+            @include h2_accent
+            text-align: center
+            margin-bottom: 76px
+            &::after
+                content: ""
+                width: 50px
+                height: 3px
+                background-color: $accent-yellow
+                position: absolute
+                left: 50%
+                bottom: -23px
+
+        .partners_list
+            display: grid
+            grid-template-columns: repeat(4, 313px)
+            grid-column-gap: 21px
+            .partner_item
+                text-align: center
+                .partner_title
+                    font-family: 'Cardo'
+                    font-style: normal
+                    font-weight: 400
+                    font-size: 24px
+                    line-height: 29px
+                    text-align: center
+                    color: $accent-blue
+                    margin: 22px 0 16px 0
+                .partner_abstract
+                    font-family: 'Inter'
+                    font-style: normal
+                    font-weight: 400
+                    font-size: 19px
+                    line-height: 28px
+                    text-align: center
+                    color: #969AA0
