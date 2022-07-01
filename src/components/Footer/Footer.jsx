@@ -7,7 +7,7 @@ import FooterContacts from './FooterContacts/FooterContacts'
 
 export default function Footer() {
   return (
-    <div className={s.footer}>
+    <div className={s.footer} id="contacts">
         <FooterSocial />
         <FooterExplore />
         <FooterUtility />

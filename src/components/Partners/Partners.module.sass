@@ -21,24 +21,17 @@
 
         .partners_list
             display: grid
-            grid-template-columns: repeat(4, 313px)
-            grid-column-gap: 21px
-            .partner_item
-                text-align: center
-                .partner_title
-                    font-family: 'Cardo'
-                    font-style: normal
-                    font-weight: 400
-                    font-size: 24px
-                    line-height: 29px
-                    text-align: center
-                    color: $accent-blue
-                    margin: 22px 0 16px 0
-                .partner_abstract
-                    font-family: 'Inter'
-                    font-style: normal
-                    font-weight: 400
-                    font-size: 19px
-                    line-height: 28px
-                    text-align: center
-                    color: #969AA0
+            grid-template-columns: repeat(4, auto)
+            grid-gap: 21px
+@media (max-width: 1400px)
+    .partners
+        .wrap
+            .partners_list
+                grid-template-columns: repeat(2, auto)
+                grid-template-rows: auto
+@media (max-width: 800px)
+    .partners
+        .wrap
+            .partners_list
+                grid-template-columns: auto
+                grid-gap: 50px

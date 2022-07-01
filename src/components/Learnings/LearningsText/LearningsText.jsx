@@ -1,14 +1,10 @@
 import React, { useEffect, useState } from 'react'
+import LearnItem from '../LearnItem/LearnItem';
 import s from "./LearningsText.module.sass"
-
+import { allLearnings } from '../../../requests';
 export default function LearningsText() {
   const [learnings, setLearnings] = useState([]);
 
-const allLearnings = (resolve, reject = ()=>{}) =>{
-    fetch("http://localhost:7000/api/learning/all") 
-        .then(data=>data.json(), reject)
-        .then(resolve);
-}
 
 useEffect(()=>{
     allLearnings(setLearnings);
@@ -18,10 +14,7 @@ useEffect(()=>{
     <div className={s.learnings_text}>
 
       {learnings.map(l=>
-                    <div className={s.learn_item} key={l.id}>
-                    <div className={s.number}>{l.number}</div>
-                    <div className={s.text}>{l.text}</div>
-                </div>
+                    <LearnItem key={l.id} number={l.number} text={l.text}/>
     
         )}
     </div>

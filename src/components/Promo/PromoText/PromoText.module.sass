@@ -63,6 +63,7 @@
                bottom: -3px
     .statistics
         display: flex
+        padding-left: 26px
         & div+div
             margin-left: 60px
         .stat_item
@@ -92,6 +93,30 @@
                 font-size: 17px
                 line-height: 51px
                 color: #B4C7E7
-
-
-
+@media(max-width: 800px)
+    .promo_text
+        h1
+            font-size: 50px
+            line-height: 62px
+@media(max-width: 600px)
+    .promo_text
+        padding: 0 30px
+        h1
+            font-size: 35px
+            line-height: 42px
+        .believes
+            font-size: 14px
+            line-height: 22px
+        .statistics
+            .stat_item
+                &::after
+                    width: 10px
+                    height: 10px
+                    left: -18px
+                    bottom: 48px
+                .parameter
+                    font-size: 18px
+                    line-height: 22px
+                .figures
+                    font-size: 14px
+                    line-height: 42px

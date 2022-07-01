@@ -8,6 +8,7 @@
     font-size: 17px
     line-height: 26px
     letter-spacing: 0.17px
+    transition: left 0.5s ease
     &>a
         color: #F6F8FC
         text-decoration: none
@@ -17,3 +18,18 @@
         margin-left: 47px
         &:last-child
             margin-left: 60px
+    &.active
+        display: flex
+        top: 90px
+        left: 50%
+        a+a
+            margin-left: 0
+            margin-top: 5px
+            &:last-child
+                margin-left: 0
+@media(max-width: 1100px)
+    .nav
+        position: absolute
+        flex-direction: column
+        top: -300px
+        left: 500%

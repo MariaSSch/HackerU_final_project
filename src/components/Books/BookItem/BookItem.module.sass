@@ -1,0 +1,53 @@
+@import './../../../utils/vars'
+.book
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-gap: 30px
+    align-items: center
+    .book_title
+        font-family: 'Cardo'
+        font-style: normal
+        font-weight: 400
+        font-size: 32px
+        line-height: 38px
+        letter-spacing: 0.32px
+        color: $accent-blue
+    .book_price
+        font-family: 'Inter'
+        font-style: normal
+        font-weight: 400
+        font-size: 21px
+        line-height: 33px
+        color: $accent-yellow
+        margin: 7px 0 17px 0
+    .book_abstract
+        font-family: 'Inter'
+        font-style: normal
+        font-weight: 400
+        font-size: 19px
+        line-height: 28px
+        color: #969AA0
+        width: 287px
+    .book_type
+        font-family: 'Cardo'
+        font-style: normal
+        font-weight: 400
+        font-size: 24px
+        line-height: 29px
+        color: $accent-blue
+        margin-top: 13px
+        position: relative
+        left: 18px
+        &::after
+            content: ""
+            width: 16px
+            height: 16px
+            border-radius: 50%
+            background-color: $accent-yellow
+            position: absolute
+            left: -20px
+            bottom: 5px
+@media(max-width: 600px)
+    .book
+        grid-template-columns: 1fr
+        justify-items: center

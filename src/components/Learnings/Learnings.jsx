@@ -6,12 +6,12 @@ import LearningsText from './LearningsText/LearningsText'
 export default function Learnings() {
   return (
     <div className={s.learnings}>
-        
-        <h2 className={s.h2}>What Will You Learn?</h2>
-        
         <div className={s.wrap}>
-            <LearningsText />
-            <LearningsImg />
+          <h2 className={s.h2}>What Will You Learn?</h2>
+          <div className={s.content}>
+              <LearningsText />
+              <LearningsImg />
+          </div>
         </div>
     </div>
   )

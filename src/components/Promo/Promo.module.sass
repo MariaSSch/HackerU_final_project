@@ -4,10 +4,16 @@
     justify-content: center
     align-items: center
     background-color: $accent-blue
+    padding: 100px 0
+
     .wrap
         display: grid
         grid-template-columns: 1fr 1fr
-        grid-column-gap: 65px
+        grid-gap: 4.5vw
         align-items: center
-        padding: 100px 0
+
+@media (max-width: 1400px)
+    .promo
+        .wrap
+            grid-template-columns: 1fr
 

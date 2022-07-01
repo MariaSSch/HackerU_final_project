@@ -1,6 +1,15 @@
 @import './../../utils/vars'
 .footer
     background-color: $accent-blue
-    padding: 92px 0 70px 0
-    display: flex
-    justify-content: space-around
+    padding: 92px 70px
+    display: grid
+    grid-template-columns: 277.7px 198.36px 297.53px 436.39px
+    grid-gap: 30px
+@media(max-width: 1400px)
+    .footer
+        grid-template-columns: 200px 200px
+        grid-template-rows: auto
+        justify-content: center
+@media(max-width: 600px)
+    .footer
+        grid-template-columns: 300px

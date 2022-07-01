@@ -20,11 +20,11 @@
         line-height: 34px
         color: #969AA0
         margin: 59px 0
-        width: 38.8vw
+        width: 559px
     .statistics
         display: grid
         grid-template-columns: repeat(3, 1fr)
-        grid-column-gap: 38px
+        grid-gap: 38px
         align-items: center
         position: relative
         margin: 33px 0 54px 0
@@ -53,5 +53,34 @@
                 position: absolute
                 left: -37px
                 bottom: 0px
-
-                
+@media (max-width: 1400px)
+    .author_info
+        margin: 0 25px
+        display: flex
+        flex-direction: column
+        align-items: center
+        .h2
+            text-align: center
+            &::after
+                left: 48%
+        .author_abstract
+            margin-bottom: 20px
+@media(max-width: 600px)
+    .author_info
+        .author_abstract
+            font-size: 16px
+            line-height: 27px
+            width: auto
+        .statistics
+            margin-top: 20px
+            .stat_item
+                .figure
+                    font-size: 43px
+                    line-height: 62px
+                .value
+                    font-size: 14px
+                    line-height: 18px
+            .stat_item_elem
+                &::before
+                    height: 72px
+                    left: -30px

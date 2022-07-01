@@ -7,7 +7,7 @@ import AuthorText from './AuthorText/AuthorText'
 
 export default function Author() {
   return (
-    <div className={s.author}>
+    <div className={s.author} id="author">
         <div className={s.wrap}>
             <AuthorImg/>
             <AuthorText />
