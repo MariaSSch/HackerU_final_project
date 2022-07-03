@@ -4,8 +4,25 @@ import s from "./AuthorText.module.sass"
 
 
 export default function AuthorImg() {
-  const classes = s.stat_item + " " + s.stat_item_elem
 
+  const statistics = [
+    {
+        id: 1,
+        figure: "02",
+        value: "Books Published"
+    },
+    {
+        id: 2,
+        figure: "4.5",
+        value: "User Reviews"
+    },
+    {
+        id: 3,
+        figure: "04",
+        value: "Best Seller Awards"
+    },
+
+  ]
   return (
     <div className={s.author_info}>
                 <h2 className={s.h2}>About the Author</h2>
@@ -14,20 +31,14 @@ export default function AuthorImg() {
                 we discover new writers, where children get hooked on the thrill of reading 
                 that can last a lifetime.</p>
                 <div className={s.statistics}>
-                    <div className={s.stat_item}>
-                        <p className={s.figure}>02</p>
-                        <p className={s.value}>Books Published</p>
-                    </div>
 
-                    <div className={classes}>
-                        <p className={s.figure}>4.5</p>
-                        <p className={s.value}>User Reviews</p>
-                    </div>
+                    {statistics.map(item=>
+                        <div id={item.id} className={s.stat_item}>
+                            <p id={item.figure} className={s.figure}>{item.figure}</p>
+                            <p id={item.value} className={s.value}>{item.value}</p>
 
-                    <div className={classes}>
-                        <p className={s.figure}>04</p>
-                        <p className={s.value}>Best Seller Awards</p>
-                    </div>
+                        </div>
+                        )}
                 </div>
                 <QRBlock/>
             </div>

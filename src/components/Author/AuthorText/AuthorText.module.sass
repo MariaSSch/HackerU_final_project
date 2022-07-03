@@ -28,6 +28,16 @@
         align-items: center
         position: relative
         margin: 33px 0 54px 0
+        div+div
+            position: relative
+            &::before
+                content: ""
+                width: 1px
+                height: 98px
+                background-color: $accent-yellow
+                position: absolute
+                left: -37px
+                bottom: 0px
         .stat_item
             .figure
                 font-family: 'Cardo'
@@ -43,16 +53,6 @@
                 font-size: 17px
                 line-height: 22px
                 color: #969AA0
-        .stat_item_elem
-            position: relative
-            &::before
-                content: ""
-                width: 1px
-                height: 98px
-                background-color: $accent-yellow
-                position: absolute
-                left: -37px
-                bottom: 0px
 @media (max-width: 1400px)
     .author_info
         margin: 0 25px
